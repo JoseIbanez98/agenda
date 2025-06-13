@@ -1,0 +1,35 @@
+<div class="lista-citas">
+  <div class="header-flex" *ngIf="loadingHeaders==true">
+    <div *ngIf="numCitas == 1" class="header-table">
+      {{ numCitas }} cita agendada
+    </div>
+    <div *ngIf="numCitas != 1" class="header-table">
+      {{ numCitas }} citas agendadas
+    </div>
+    <div class="example-button-container">
+      <div
+        mat-mini-fab
+        class="nav-item"
+        aria-label="Example icon button with a home icon"
+        (click)="abrirSheet()"
+        routerLinkActive="active"
+      >
+        <mat-icon>library_add</mat-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor-cards-citas">
+    <div *ngFor="let cita of listaCitas" >
+      <app-card-cita-agenda (citaGuardada)="citaEditada()" [dataCita]="cita" />
+    </div>
+
+    <div class="empty-list" *ngIf="listEmpty == true">
+      <img
+        class="icon-empty-list"
+        src="assets/no-content.png"
+        alt="con-content"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+
+
+<!-- desktop-design -->
+<main class="desktop-design">
+  <mat-sidenav-container class="">
+    <mat-sidenav>Start</mat-sidenav>
+    <mat-sidenav position="end">End</mat-sidenav>
+    <section>Esto es para computadora</section>
+  </mat-sidenav-container>
+</main>
+
+<!-- mobile design  -->
+<main class="mobile-design">
+  <app-dias-agenda
+    [DiaPorcentaje]="diasPorcentaje"
+    (clicked)="onDateSelected($event)"
+  />
+
+  <app-lista-pacientes-agenda
+  (citaGuardada)="generarLista()"
+    [listEmpty]="ListEmpty"
+    [numCitas]="citasPorDia"
+    [listaCitas]="listaCitasFiltrada"
+  />
+</main>

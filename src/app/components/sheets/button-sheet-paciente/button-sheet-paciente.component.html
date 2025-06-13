@@ -1,0 +1,65 @@
+<div class="patient-form-container">
+  <h2>{{titulo}} 🩺</h2>
+  <form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="nombre" required>
+      <mat-error *ngIf="patientForm.get('nombre')?.hasError('required')">
+        El nombre es obligatorio.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Apellido</mat-label>
+      <input matInput formControlName="apellido" required>
+      <mat-error *ngIf="patientForm.get('apellido')?.hasError('required')">
+        El apellido es obligatorio.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="email" required>
+      <mat-error *ngIf="patientForm.get('email')?.hasError('required')">
+        El email es obligatorio.
+      </mat-error>
+      <mat-error *ngIf="patientForm.get('email')?.hasError('email')">
+        Formato de email inválido.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Teléfono</mat-label>
+      <input matInput type="tel" formControlName="telefono">
+       <mat-error *ngIf="patientForm.get('telefono')?.hasError('pattern')">
+        Solo se admiten números.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Dirección</mat-label>
+      <input matInput formControlName="direccion">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Fecha de Nacimiento</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="fecha" required>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="patientForm.get('fecha')?.hasError('required')">
+        La fecha de nacimiento es obligatoria.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Notas Médicas</mat-label>
+      <textarea matInput formControlName="notas_medicas" cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="2" cdkAutosizeMaxRows="5"></textarea>
+    </mat-form-field>
+
+    <div class="actions">
+      <button
+       mat-stroked-button (click)="closeSheet($event)" type="button">Cancelar</button>
+      <button mat-raised-button color="primary" type="submit" [disabled]="patientForm.invalid">{{botontext}}</button>
+    </div>
+  </form>
+</div>

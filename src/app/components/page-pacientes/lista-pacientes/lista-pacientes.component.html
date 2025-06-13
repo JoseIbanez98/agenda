@@ -1,0 +1,25 @@
+<div
+  class="contenedor-lista-pacientes"
+  (pacienteGuardado)="generarListaPacientes()"
+>
+  <div class="contenedor-titulo">{{ numPacientes }} Pacientes</div>
+  <mat-form-field appearance="fill" outlined-outline-width>
+    <mat-label>Buscar paciente</mat-label>
+    <input matInput [(ngModel)]="filtro" placeholder="Escribe un nombre" />
+    <button mat-icon-button *ngIf="filtro" matSuffix (click)="filtro = ''">
+      <mat-icon>close</mat-icon>
+    </button>
+    <mat-icon matPrefix>search</mat-icon>
+    <mat-hint *ngIf="(listaPacientes | filter:filtro).length === 0 && filtro">
+    No se encontraron pacientes
+  </mat-hint>
+  </mat-form-field>
+  <div class="contenedor-cards">
+    <div *ngFor="let paciente of listaPacientes | filter : filtro">
+      <app-card-paciente
+        [paciente]="paciente"
+        (pacienteGuardado)="generarListaPacientes()"
+      />
+    </div>
+  </div>
+</div>

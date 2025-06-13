@@ -1,0 +1,31 @@
+
+<mat-card class="cita-card" [class.actual]="esActual">
+  <div class="horario">
+    <div class="horario-inicio">
+      {{dataCita.hora_inicio.substring(0,5)}}
+    </div>
+    <div class="horario-fin">
+      {{dataCita.hora_fin.substring(0,5)}}
+    </div>
+  </div>
+  <div class="circle">
+    <mat-icon class="icon">
+      circle
+    </mat-icon>
+  </div>
+  <div class="informacion-cita">
+    <div class="paciente">
+      {{dataCita.paciente.nombre}} {{dataCita.paciente.apellido}}
+    </div> 
+    <div class="tratamiento">
+      {{dataCita.tratamiento.nombre}}
+    </div> 
+  </div>
+  <div class="botones">
+    <div mat-icon-button class="boton" (click)="abrirEditoCitas(dataCita)">
+      <mat-icon >edit_calendar</mat-icon>
+    </div>
+    
+
+  </div>
+</mat-card>

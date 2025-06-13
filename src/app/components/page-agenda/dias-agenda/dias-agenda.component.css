@@ -1,0 +1,28 @@
+.contenedor-fecha {
+  display: none;
+}
+@media (max-width: 768px) {
+  .contenedor-fecha {
+    padding-top: 2%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    height: 20dvh;
+  }
+  .texto-fecha{
+    font-weight: 600;
+  }
+  .contenedor-progress {
+    margin-top: 2%;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-flow: row;
+  }
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+}

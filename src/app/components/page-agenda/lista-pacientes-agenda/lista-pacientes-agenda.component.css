@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+  .lista-citas {
+    padding: 1%;
+
+    height: 70dvh;
+  }
+  .header-table {
+   
+   width: 100%;
+    padding-left: 2%;
+    display: flex;
+
+    font-weight: 600;
+  }
+  .contenedor-cards-citas{
+    
+    height: 88%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .empty-list {
+    font-size: xx-large;
+
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-empty-list {
+    width: 60%;
+    height: 60%;
+  }
+  .header-flex {
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+   
+    height: 10%;
+  }
+
+  .nav-item {
+    text-align: center;
+    color: #007BBA;
+
+    transition: background 0.3s;
+  }
+
+  .nav-item:active {
+    transform: scale(0.97);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    background: #f0f0f0;
+    border-radius: 10px;
+    color: #7e25ce;
+  }
+}

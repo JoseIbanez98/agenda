@@ -1,0 +1,11 @@
+.footer-nav{
+    display: none;
+}
+body{
+    font-family: 'Franklin Gothic Medium';
+}
+@media (max-width: 768px) {
+    .footer-nav{
+        display: block;
+    }
+}

@@ -1,0 +1,40 @@
+.circle-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-chart {
+  width: 100%;
+  height: 100%;
+  margin-left: 15px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eeeeee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke: #007bba;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transform: rotate(-180deg);
+  transform-origin: center;
+}
+
+.circle-text {
+  fill: #003a4d;
+  font-family: Arial, sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+#dia-actual {
+  background-color: #2196f3;
+  color: white;
+}

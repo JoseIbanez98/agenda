@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+  .title-dashboard {
+    font-size: medium;
+    font-weight: bold;
+  }
+  .subtitle-dashboard {
+    font-size: small;
+  }
+  .contendor-dashboard {
+    padding: 2%;
+
+    height: 87%;
+  }
+  .dashboard-header {
+
+    height: 10%;
+  }
+  .dashboard-content {
+    
+    height: 90%;
+    width: 100%;
+   
+  }
+
+  .dashboard-contenedor-cards {
+
+    height: 23%;
+    width: 98%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .card-stat{
+    width: 30%;
+  }
+  .lista-citas{
+    height: 77%;
+  }
+  .header-agenda{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

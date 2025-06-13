@@ -1,0 +1,98 @@
+
+<div class="patient-form-container">
+  <h2>{{ textoSnackbar }} 🩺</h2>
+  <form [formGroup]="citaForm" (ngSubmit)="opcionBoton()">
+    <mat-form-field appearance="fill">
+      <mat-label>Fecha</mat-label>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        formControlName="fecha"
+        required
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="citaForm.get('fecha')?.hasError('required')">
+        La fecha obligatorio.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Hora Inicio</mat-label>
+      <input matInput type="time" formControlName="hora_inicio" required />
+      <mat-error *ngIf="citaForm.get('hora_inicio')?.hasError('required')">
+        La hora de inicio es obligatorio.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Hora Fin</mat-label>
+      <input
+        class="inputs"
+        matInput
+        type="time"
+        formControlName="hora_fin"
+        required
+      />
+      <mat-error *ngIf="citaForm.get('hora_fin')?.hasError('required')">
+        La hora de finalizacion es obligatorio.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Paciente</mat-label>
+      <mat-select formControlName="paciente_id" required>
+        <mat-option *ngFor="let paciente of pacientes" [value]="paciente.id">
+          {{ paciente.nombre }} {{ paciente.apellido }}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="citaForm.get('paciente_id')?.hasError('required')">
+        El Paciente es obligatorio.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Asistente</mat-label>
+      <mat-select formControlName="asistente_id" required>
+        <mat-option *ngFor="let asistente of asistentes" [value]="asistente.id">
+          {{ asistente.nombre }} 
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="citaForm.get('asistente_id')?.hasError('required')">
+        El Asistentes es obligatorio.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Tratamientos</mat-label>
+      <mat-select formControlName="tratamiento_id">
+        <mat-option
+          *ngFor="let tratamiento of tratamientos"
+          [value]="tratamiento.id"
+        >
+          {{ tratamiento.nombre }}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="citaForm.get('tratamiento_id')?.hasError('required')">
+        El Tratamiento es obligatorio.
+      </mat-error>
+    </mat-form-field>
+
+    <div class="actions">
+      <button
+        mat-stroked-button
+        (click)="bottomSheetRef.dismiss()"
+        type="button"
+      >
+        Cancelar
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="citaForm.invalid"
+      >
+        Guardar Cita
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,14 @@
+<div class="contenedor-fecha">
+  <div translate="no" class="texto-fecha">
+    {{ diaNumero }},{{ dia }} {{ mes }} {{ anio }}
+    <mat-icon> calendar_month</mat-icon>
+  </div>
+  <div class="contenedor-progress">
+    <app-circular-progress
+      *ngFor="let porcen of DiaPorcentaje"
+      [progress]="porcen.porcentaje"
+      (clicked)="onClick($event)"
+      [label]="porcen.dia"
+    />
+  </div>
+</div>

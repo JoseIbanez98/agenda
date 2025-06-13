@@ -1,0 +1,18 @@
+<div class="contenedor-card-paciente" >
+  <div class="card">
+    <div class="content-card">
+      <div class="nombre-card">
+        {{ paciente.nombre }} {{ paciente.apellido }}
+      </div>
+      <div class="boton-card">
+        
+        <button mat-icon-button class="boton" (click)="abrirSheetNuevaCita()" >
+          <mat-icon>add</mat-icon>
+        </button>
+        <button mat-icon-button class="boton" (click)="abrirSheetEditarPaciente(paciente)" >
+          <mat-icon>edit_note</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

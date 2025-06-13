@@ -1,0 +1,25 @@
+<div class="contendor-dashboard">
+  <div class="dashboard-header">
+    <div class="title-dashboard">Bienvenido Dr. {{ usuario.nombre }}</div>
+    <div class="subtitle-dashboard">Hoy, {{ fechaActual }}</div>
+  </div>
+
+  <div class="dashboard-content">
+    <div class="dashboard-contenedor-cards">
+      <app-stat-cards [cantidad]="citasPorDia"  [colorBackground]="'#4361EE'" [icono]="'event'" class="card-stat" />
+      <app-stat-cards [cantidad]="numPacientes" [contenido]="'Pacientes'" [colorBackground]="'#4CC9F0'" [icono]="'groups'" class="card-stat" />
+      <app-stat-cards [cantidad]="numTratamiento" [contenido]="'Tratamientos'" [colorBackground]="'#F72585'" [icono]="'medical_services'" class="card-stat" />
+    </div>
+    <div class="lista-citas">
+        <div class="header-agenda">
+            <div>
+                Proximas citas
+            </div>
+            <div>
+                <a href="/agenda-citas"> ver todas</a>
+            </div>
+        </div>
+        <app-lista-pacientes-agenda [listEmpty]="ListEmpty" [listaCitas]="listaCitasFiltrada" [loadingHeaders]="false"/>
+    </div>
+  </div>
+</div>

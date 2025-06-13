@@ -1,0 +1,8 @@
+<div class="contenedor-titulo">Mis Pacientes</div>
+<div class="contenedor-boton-agregar-paciente">
+    <div class="boton" (click)="agregarPaciente()"  (pacienteGuardado)="generarListaPacientes()">Agregar paciente</div>
+</div>
+
+<app-lista-pacientes [listaPacientes]="listaPacientes" (pacienteGuardado)="generarListaPacientes()" [numPacientes]="numPacientes"/>
+
+
