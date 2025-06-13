@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/page-pacientes/card-paciente/card-paciente.component.css"],
+  "sourcesContent": ["@media (max-width: 768px) {\r\n  .contenedor-card-paciente {\r\n    margin-top: 3%;\r\n    width: 100%;\r\n    height: 10dvh;\r\n  }\r\n  .card {\r\n    width: 100%;\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n  \r\n  }\r\n  .content-card {\r\n    width: 90%;\r\n    height: 100%;\r\n    background-color: #FFFFFF;\r\n    border: none;\r\n    border-radius: 10px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n  .nombre-card{\r\n \r\n    width: 60%;\r\n    display: flex;\r\n    justify-content: start;\r\n    text-transform: capitalize;\r\n\r\n  }\r\n  .boton-card {\r\n    display: flex;\r\n    justify-content: space-around;\r\n    width: 30%;\r\n    \r\n  }\r\n  .boton{\r\n    color: #007BBA ;\r\n  }\r\n}\r\n"],
+  "mappings": ";AAAA,OAAO,CAAC,SAAS,EAAE;AACjB,GAAC;AACC,gBAAY;AACZ,WAAO;AACP,YAAQ;AACV;AACA,GAAC;AACC,WAAO;AACP,YAAQ;AACR,aAAS;AACT,oBAAgB;AAChB,qBAAiB;AACjB,iBAAa;AAEf;AACA,GAAC;AACC,WAAO;AACP,YAAQ;AACR,sBAAkB;AAClB,YAAQ;AACR,mBAAe;AACf,aAAS;AACT,iBAAa;AACb,qBAAiB;AACnB;AACA,GAAC;AAEC,WAAO;AACP,aAAS;AACT,qBAAiB;AACjB,oBAAgB;AAElB;AACA,GAAC;AACC,aAAS;AACT,qBAAiB;AACjB,WAAO;AAET;AACA,GAAC;AACC,WAAO;AACT;AACF;",
+  "names": []
+}

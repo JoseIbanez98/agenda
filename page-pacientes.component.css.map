@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/page-pacientes/page-pacientes/page-pacientes.component.css"],
+  "sourcesContent": ["@media (max-width: 768px) {\r\n  .contenedor-boton-agregar-paciente {\r\n    width: 100%;\r\n    height: 10%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }\r\n\r\n  .contenedor-titulo {\r\n    width: 100%;\r\n    height: 5%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }\r\n  .contenedor-boton-agregar-paciente {\r\n    width: 100%;\r\n    height: 5%;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n  .boton {\r\n    background-color: #007BBA;\r\n    width: 80%;\r\n    height: 100%;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    border-radius: 25px;\r\n    border-color: transparent;\r\n    color: #FFFFFF  ;\r\n  }\r\n}\r\n"],
+  "mappings": ";AAAA,OAAO,CAAC,SAAS,EAAE;AACjB,GAAC;AACC,WAAO;AACP,YAAQ;AACR,aAAS;AACT,qBAAiB;AACjB,iBAAa;AACf;AAEA,GAAC;AACC,WAAO;AACP,YAAQ;AACR,aAAS;AACT,qBAAiB;AACjB,iBAAa;AACf;AACA,GAfC;AAgBC,WAAO;AACP,YAAQ;AACR,aAAS;AACT,iBAAa;AACb,qBAAiB;AACnB;AACA,GAAC;AACC,sBAAkB;AAClB,WAAO;AACP,YAAQ;AACR,aAAS;AACT,iBAAa;AACb,qBAAiB;AACjB,mBAAe;AACf,kBAAc;AACd,WAAO;AACT;AACF;",
+  "names": []
+}

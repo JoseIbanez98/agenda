@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.component.css"],
+  "sourcesContent": [".footer-nav{\r\n    display: none;\r\n}\r\nbody{\r\n    font-family: 'Franklin Gothic Medium';\r\n}\r\n@media (max-width: 768px) {\r\n    .footer-nav{\r\n        display: block;\r\n    }\r\n}"],
+  "mappings": ";AAAA,CAAC;AACG,WAAS;AACb;AACA;AACI,eAAa;AACjB;AACA,OAAO,CAAC,SAAS,EAAE;AACf,GAPH;AAQO,aAAS;AACb;AACJ;",
+  "names": []
+}

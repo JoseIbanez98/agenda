@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/page-agenda/circular-progress/circular-progress.component.css"],
+  "sourcesContent": [".circle-container {\r\n  width: 80px;\r\n  height: 80px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.circular-chart {\r\n  width: 100%;\r\n  height: 100%;\r\n  margin-left: 15px;\r\n}\r\n\r\n.circle-bg {\r\n  fill: none;\r\n  stroke: #eeeeee;\r\n  stroke-width: 3.8;\r\n}\r\n\r\n.circle {\r\n  fill: none;\r\n  stroke: #007bba;\r\n  stroke-width: 3.8;\r\n  stroke-linecap: round;\r\n  transform: rotate(-180deg);\r\n  transform-origin: center;\r\n}\r\n\r\n.circle-text {\r\n  fill: #003a4d;\r\n  font-family: Arial, sans-serif;\r\n  font-size: 0.5em;\r\n  text-anchor: middle;\r\n  dominant-baseline: middle;\r\n}\r\n#dia-actual {\r\n  background-color: #2196f3;\r\n  color: white;\r\n}\r\n"],
+  "mappings": ";AAAA,CAAC;AACC,SAAO;AACP,UAAQ;AACR,WAAS;AACT,eAAa;AACb,mBAAiB;AACnB;AAEA,CAAC;AACC,SAAO;AACP,UAAQ;AACR,eAAa;AACf;AAEA,CAAC;AACC,QAAM;AACN,UAAQ;AACR,gBAAc;AAChB;AAEA,CAAC;AACC,QAAM;AACN,UAAQ;AACR,gBAAc;AACd,kBAAgB;AAChB,aAAW,OAAO;AAClB,oBAAkB;AACpB;AAEA,CAAC;AACC,QAAM;AACN,eAAa,KAAK,EAAE;AACpB,aAAW;AACX,eAAa;AACb,qBAAmB;AACrB;AACA,CAAC;AACC,oBAAkB;AAClB,SAAO;AACT;",
+  "names": []
+}
