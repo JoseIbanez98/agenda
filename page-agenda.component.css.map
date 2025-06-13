@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/components/page-agenda/page-agenda/page-agenda.component.css"],
-  "sourcesContent": ["@media (max-width: 768px) {\r\n    .desktop-design{\r\n        display: none;\r\n    }\r\n   .mobile-design{\r\n  \r\n    \r\n   }\r\n}"],
-  "mappings": ";AAAA,OAAO,CAAC,SAAS,EAAE;AACf,GAAC;AACG,aAAS;AACb;AACD,GAAC;AAGD;AACH;",
-  "names": []
-}

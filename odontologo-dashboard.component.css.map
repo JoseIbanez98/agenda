@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/components/odontologo-dashboard/odontologo-dashboard.component.css"],
-  "sourcesContent": ["@media (max-width: 768px) {\r\n  .title-dashboard {\r\n    font-size: medium;\r\n    font-weight: bold;\r\n  }\r\n  .subtitle-dashboard {\r\n    font-size: small;\r\n  }\r\n  .contendor-dashboard {\r\n    padding: 2%;\r\n\r\n    height: 87%;\r\n  }\r\n  .dashboard-header {\r\n\r\n    height: 10%;\r\n  }\r\n  .dashboard-content {\r\n    \r\n    height: 90%;\r\n    width: 100%;\r\n   \r\n  }\r\n\r\n  .dashboard-contenedor-cards {\r\n\r\n    height: 23%;\r\n    width: 98%;\r\n    padding: 1%;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    \r\n  }\r\n  .card-stat{\r\n    width: 30%;\r\n  }\r\n  .lista-citas{\r\n    height: 77%;\r\n  }\r\n  .header-agenda{\r\n    margin-top: 5px;\r\n    display: flex;\r\n    justify-content: space-between;\r\n  }\r\n}\r\n"],
-  "mappings": ";AAAA,OAAO,CAAC,SAAS,EAAE;AACjB,GAAC;AACC,eAAW;AACX,iBAAa;AACf;AACA,GAAC;AACC,eAAW;AACb;AACA,GAAC;AACC,aAAS;AAET,YAAQ;AACV;AACA,GAAC;AAEC,YAAQ;AACV;AACA,GAAC;AAEC,YAAQ;AACR,WAAO;AAET;AAEA,GAAC;AAEC,YAAQ;AACR,WAAO;AACP,aAAS;AACT,aAAS;AACT,qBAAiB;AAEnB;AACA,GAAC;AACC,WAAO;AACT;AACA,GAAC;AACC,YAAQ;AACV;AACA,GAAC;AACC,gBAAY;AACZ,aAAS;AACT,qBAAiB;AACnB;AACF;",
-  "names": []
-}

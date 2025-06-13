@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/components/page-pacientes/lista-pacientes/lista-pacientes.component.css"],
-  "sourcesContent": ["@media (max-width: 768px) {\r\n  .contenedor-lista-pacientes {\r\n    width: 100%;\r\n    height: 80%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  .contenedor-titulo {\r\n    width: 100%;\r\n    height: 5%;\r\n    margin-top: 2%;\r\n    display: flex;\r\n    padding-left: 5%;\r\n    align-items: center;\r\n  }\r\n  .contenedor-cards {\r\n    width: 100%;\r\n    height: 100%;\r\n    overflow-x: auto;\r\n    white-space: nowrap;\r\n    display: flex;\r\n    flex-flow: column;\r\n  }\r\n\r\n  mat-form-field {\r\n    margin-top: 2%;\r\n    width: 90%;\r\n  }\r\n}\r\n"],
-  "mappings": ";AAAA,OAAO,CAAC,SAAS,EAAE;AACjB,GAAC;AACC,WAAO;AACP,YAAQ;AACR,aAAS;AACT,oBAAgB;AAChB,iBAAa;AACf;AACA,GAAC;AACC,WAAO;AACP,YAAQ;AACR,gBAAY;AACZ,aAAS;AACT,kBAAc;AACd,iBAAa;AACf;AACA,GAAC;AACC,WAAO;AACP,YAAQ;AACR,gBAAY;AACZ,iBAAa;AACb,aAAS;AACT,eAAW;AACb;AAEA;AACE,gBAAY;AACZ,WAAO;AACT;AACF;",
-  "names": []
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/components/footer-navigation/footer-navigation.component.css"],
-  "sourcesContent": [".mobile-footer {\r\n  position: fixed;\r\n  bottom: 0;\r\n  width: 100%;\r\n  height: 10dvh;\r\n  background: #007BBA ;\r\n  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);\r\n  z-index: 100;\r\n}\r\n\r\n.nav-container {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  padding: 10px 0;\r\n}\r\n\r\n.nav-item {\r\n  text-align: center;\r\n  color: #A2D5C6\t;\r\n  padding: 10px;\r\n  transition: background 0.3s;\r\n}\r\n\r\n.nav-item.active {\r\n  background: #f0f0f0;\r\n  border-radius: 10px;\r\n  color: #A2D5C6;\r\n}\r\n.nav-item.main {\r\n  transform: scale(1.2);\r\n  font-weight: bold;\r\n}\r\n"],
-  "mappings": ";AAAA,CAAC;AACC,YAAU;AACV,UAAQ;AACR,SAAO;AACP,UAAQ;AACR,cAAY;AACZ,cAAY,EAAE,KAAK,IAAI,KAAK,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE;AACrC,WAAS;AACX;AAEA,CAAC;AACC,WAAS;AACT,mBAAiB;AACjB,WAAS,KAAK;AAChB;AAEA,CAAC;AACC,cAAY;AACZ,SAAO;AACP,WAAS;AACT,cAAY,WAAW;AACzB;AAEA,CAPC,QAOQ,CAAC;AACR,cAAY;AACZ,iBAAe;AACf,SAAO;AACT;AACA,CAZC,QAYQ,CAAC;AACR,aAAW,MAAM;AACjB,eAAa;AACf;",
-  "names": []
-}

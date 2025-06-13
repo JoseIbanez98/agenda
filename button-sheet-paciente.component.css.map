@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/components/sheets/button-sheet-paciente/button-sheet-paciente.component.css"],
-  "sourcesContent": [".patient-form-container {\r\n  padding: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nmat-form-field {\r\n  width: 100%;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.actions {\r\n  margin-top: 20px;\r\n  display: flex;\r\n  justify-content: flex-end;\r\n  gap: 10px; /* Espacio entre botones */\r\n}"],
-  "mappings": ";AAAA,CAAC;AACC,WAAS;AACT,WAAS;AACT,kBAAgB;AAClB;AAEA;AACE,SAAO;AACP,iBAAe;AACjB;AAEA,CAAC;AACC,cAAY;AACZ,WAAS;AACT,mBAAiB;AACjB,OAAK;AACP;",
-  "names": []
-}
