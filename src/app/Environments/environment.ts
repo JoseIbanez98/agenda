@@ -1,4 +1,5 @@
 export const environment ={
+     production: true,
     apiUrl:`http://${window.location.hostname}:5037/api/`,
     endPointLogin:'auth',
     endPointCita:'cita',
